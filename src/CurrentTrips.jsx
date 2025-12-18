@@ -4,6 +4,7 @@ export const currentTrips = [
         destination: 'Tokyo',
         startDate: '2026-05-10',
         endDate: '2026-05-20',
+        image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400',
         participants: [
             { id: 1, name: 'Luca Bianchi', email: 'luca.bianchi@email.com', phone: '+39 320 1111111', fiscalCode: 'BNCLCU90A01F205X' },
             { id: 2, name: 'Sofia Russo', email: 'sofia.russo@email.com', phone: '+39 331 2222222', fiscalCode: 'RSSSFO92B42H501Z' }
@@ -14,6 +15,7 @@ export const currentTrips = [
         destination: 'New York',
         startDate: '2026-01-15',
         endDate: '2026-01-22',
+        image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400',
         participants: [
             { id: 3, name: 'Marco Ferrari', email: 'marco.ferrari@email.com', phone: '+39 340 3333333', fiscalCode: 'FRRMRC88H15H501Y' },
             { id: 4, name: 'Giulia Conti', email: 'giulia.conti@email.com', phone: '+39 347 4444444', fiscalCode: 'CNTGLI95M48H501W' },
@@ -25,6 +27,7 @@ export const currentTrips = [
         destination: 'Barcellona',
         startDate: '2026-02-12',
         endDate: '2026-02-19',
+        image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=400',
         participants: [
             { id: 6, name: 'Francesca Ricci', email: 'francesca.ricci@email.com', phone: '+39 333 6666666', fiscalCode: 'RCCFNC93D52H501X' },
             { id: 7, name: 'Alessandro Gallo', email: 'alessandro.gallo@email.com', phone: '+39 339 7777777', fiscalCode: 'GLLLSN89E15H501Z' }
@@ -35,6 +38,7 @@ export const currentTrips = [
         destination: 'Dubai',
         startDate: '2026-03-14',
         endDate: '2026-03-21',
+        image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400',
         participants: [
             { id: 8, name: 'Martina Colombo', email: 'martina.colombo@email.com', phone: '+39 342 8888888', fiscalCode: 'CLMMTN94L47H501Y' },
             { id: 9, name: 'Lorenzo Greco', email: 'lorenzo.greco@email.com', phone: '+39 345 9999999', fiscalCode: 'GRCLNZ90R21H501W' },
@@ -47,6 +51,7 @@ export const currentTrips = [
         destination: 'Amsterdam',
         startDate: '2026-04-16',
         endDate: '2026-04-23',
+        image: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=400',
         participants: [
             { id: 12, name: 'Valentina Serra', email: 'valentina.serra@email.com', phone: '+39 335 1212121', fiscalCode: 'SRRVNT91H49H501Z' },
             { id: 13, name: 'Matteo Bruno', email: 'matteo.bruno@email.com', phone: '+39 346 1313131', fiscalCode: 'BRNMTT93C18H501Y' }

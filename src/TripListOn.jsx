@@ -24,29 +24,36 @@ function TripListOn({ onViewTrip, searchTerm = '' }) {
             )}
 
             {/* Viaggi in Corso */}
-            <h3>Viaggi in Corso</h3>
+            <h3 className="mb-4">Viaggi in Corso</h3>
             {filteredCurrentTrips.length === 0 ? (
                 <p className="text-muted">
                     {searchTerm ? `Nessun viaggio in corso trovato per "${searchTerm}"` : 'Nessun viaggio in corso'}
                 </p>
             ) : (
-                <ul className="list-group mb-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4 mb-5">
                     {filteredCurrentTrips.map(trip => (
-                        <li key={trip.id} className="list-group-item d-flex justify-content-between align-items-center">
-                            <div>
-                                <strong>{trip.destination}</strong><br />
-                                Dal {trip.startDate} al {trip.endDate}
+                        <div key={trip.id} className="col">
+                            <div className="card h-100">
+                                <img
+                                    src={trip.image}
+                                    className="card-img-top"
+                                    alt={trip.destination}
+                                    style={{ height: '200px', objectFit: 'cover' }}
+                                />
+                                <div className="card-body">
+                                    <h5 className="card-title">{trip.destination}</h5>
+                                    <p className="card-text">Dal {trip.startDate} al {trip.endDate}</p>
+                                    <button
+                                        className="btn btn-primary"
+                                        onClick={() => onViewTrip(trip)}
+                                    >
+                                        Dettagli
+                                    </button>
+                                </div>
                             </div>
-                            <button
-                                className="btn btn-primary btn-sm"
-                                onClick={() => onViewTrip(trip)}
-                            >
-                                <i className="bi bi-eye me-1"></i>
-                                Dettagli
-                            </button>
-                        </li>
+                        </div>
                     ))}
-                </ul>
+                </div>
             )}
 
             {/* Viaggi Programmati */}
